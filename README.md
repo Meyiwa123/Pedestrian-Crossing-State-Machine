@@ -1,3 +1,6 @@
+# Pedestrian Crossing State Machine
+
+## States
 The code implements a simple traffic light system with pedestrian crossing. The system has three states:
 
 1. Green state: The traffic light is green and vehicles can move through. If a pedestrian wants to cross he/she will have to wait presses the pedestrian button during this state, the state transitions to Yellow state.
@@ -5,6 +8,8 @@ The code implements a simple traffic light system with pedestrian crossing. The 
 2. Yellow state: The traffic light is yellow after a fixed time, the state transitions to Red state.
 
 3. Red state: The traffic light is red, indicating that vehicles should stop. The pedestrian crossing signal is active during this state, allowing pedestrians to cross the street. After a fixed time, the state transitions back to Green state.
+
+## Description
 
 The Context class represents the context in which the states operate. It has a reference to the current state and a boolean flag indicating whether a pedestrian is waiting to cross the street.
 
